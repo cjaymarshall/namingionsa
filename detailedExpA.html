@@ -1,0 +1,498 @@
+<html>
+
+	<head>
+
+		<title>Naming Ionic Compounds Explanation</title>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+   		 </script>
+        <script type="text/javascript">
+        </script>
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .smallerblackarial {
+            font-family: "Arial";
+            color: #000000;
+            font-size: 18pt;
+            font-variant: small-caps;
+            font-weight: 600;  
+          }
+
+    .smallestblackarial {
+        font-family: "Arial";
+	    color: #000000;
+	    font-size: 1.5em;
+	    font-weight: 600;
+    }
+
+    .smallblackarialnocaps {
+        font-family: "Arial";
+	    color: #000000;
+	    font-size: 16pt;
+	    font-weight: 600;
+    }
+
+    .smallerblackarialnocaps {
+        font-family: "Arial";
+	    color: #000000;
+	    font-size: 12pt;
+	    font-weight: 600;
+    }
+
+    .smallermaroonarial {
+            font-family: "Arial";
+            color: #800000;
+            font-size: 1.0em;
+            font-variant: small-caps;
+            font-weight: 600;
+            font-style: italic;
+    }
+
+    .medblackarialnocaps {
+        font-family: "Arial";
+	    color: #000000;
+	    font-size: 20pt;
+	    font-weight: 600;
+    }
+
+    .marooncomic {
+            font-family: "Comic Sans MS";
+            text-shadow: 2px 2px 2px black;
+            color: #800000;
+            font-size: 24pt;
+            font-variant: small-caps;
+            font-weight: 600;
+          }
+
+    .indent {
+           position: relative;
+           left: 100px;
+          }
+
+    .button {
+        height: 35;
+        font-size: 1.3em;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .quitButton {
+        height: 35;
+        font-size: 1.5em;
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: lightblue;
+    }
+
+    .blue {
+        color: blue;
+        font-weight: 600;
+    }
+
+    .red {
+        color: red;
+        font-weight: 600;
+    }
+
+    .black {
+        color: black;
+        font-weight: 600;
+    }
+
+    .underline {
+        text-decoration: underline;+
+    }
+
+    .windowOptions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    body {
+        background-color: #ccddcc;
+        margin: 0px;
+    }
+
+    .container {
+    }
+
+    /*Splash Page Styles*/
+    
+    .splashPage {
+        display: grid;
+        grid-template-rows: 1fr 4fr
+    }
+
+    .splashPageHead {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        background-color: #ccbbaa;
+    }
+
+    .splashPageHeadLeft {
+        display: flex;
+        justify-self: center;
+        align-items: center; 
+    }
+
+    .splashPageHeadLeft img {
+        padding: 10px;
+    }
+
+     .splashPageHeadMiddle {
+        display: flex;
+        justify-self: center;
+        align-items: center; 
+    }
+
+    .splashPageHeadMiddleText   {
+        font-family:Comic Sans MS;
+        color:#800000;
+        font-size:28pt;
+        font-weight:600;
+        font-style:italic;
+        text-shadow: 2px 2px black;
+        padding: 10px;
+    }
+
+    .splashPageHeadRight {
+        display: flex;
+        justify-self: center;
+        align-items: center; 
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+    }
+
+    .splashPageHeadRightAddress {
+        padding: 10px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12px;
+    }
+
+    .splashPageText {
+        font-family: "Arial";
+	    color: #000000;
+	    font-size: .85em;
+	    font-weight: 600;
+        width:85%;
+        margin: auto;
+    }
+
+    .splashPageTextBottom {
+        margin-top: 20px;
+        font-size: .7em;
+        text-align:center;
+    }
+
+    .window {
+        width: 80%;
+        border: 2px solid black;
+    }
+
+    .windowHeader {
+        background-color: lightgrey;
+        border-bottom: 2px solid lightcoral;
+        width: 100%;
+        height: 5%;
+    }
+
+    #windowHeader {
+        margin-left: 10px;
+    }
+
+    .windowFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid lightcoral;
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+    .windowFooterQuit {
+        margin-right: 20px;
+    }
+
+    .namePage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .nameWindowInput {
+        display: flex;
+        align-items: center;
+        background-color: #ccbbaa;
+        width: 100%;
+        height: 15%;
+        padding-left: 10px;
+    }
+
+    #inputYourName {
+        height: 35px;
+        width: 400px;
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+    .submitName {
+        padding-left: 40px;
+    }
+    #submitName {
+        height: 35;
+        font-size: 1.5em;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .modePage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .modeWindowInput {
+        display: flex;
+        flex-direction: column;
+        background-color: #ccbbaa;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .qNumPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .qNumWindowInput {
+        display: flex;
+        flex-direction: column;
+        background-color: #ccbbaa;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .timerPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .timerWindowInput {
+        display: flex;
+        flex-direction: column;
+        background-color: #ccbbaa;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .quizPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .quizWindow {
+        display: grid;
+        grid-template-columns: 1.8fr 1.2fr 1.8fr;
+        grid-template-rows: 1fr 1fr 3.5fr 1.5fr;
+        grid-gap: 10px;
+        background-color:#ccbbaa;
+        height: 80%;
+    }
+
+    .quizWindowQuestion {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .quizWindowCompound {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 15px;
+    }
+
+    #clock {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+    .questionCompound {
+       
+        padding: 10px;
+    }
+
+    .quizWindowAnswer {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-left: 30px;
+    }
+
+    .quizWindowAssess {
+        grid-column: 1/4;
+        grid-row: 4/5;
+        margin-left: 15px;
+    }
+
+   
+
+    #nextQuestionCorrect {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 75px;
+    }
+
+    #nextQuestionIncorrect {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 75px;
+    }
+
+    .quizWindowExplanationText {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        display: flex;
+        align-items: center;
+    }
+
+    .quizWindowExplanation {
+        grid-column: 3/4;
+        grid-row: 2/4;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: lightgray;
+        overflow: auto;
+    }
+
+    .quizWindowExplanationActual {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .9em;
+    }
+
+    .questionText {
+        margin: 10px;
+    }
+
+    .practiceFinishedWindow {
+        grid-column: 1/4;
+    }
+
+    .resultsWindow {
+        grid-column: 1/4;
+        grid-row: 1/5;
+        display: grid;
+        grid-template-rows: .7fr 1.6fr 1fr;
+    }
+
+    .resultsWindowText {
+        padding: 10px;
+    }
+
+    .resultsWindowTable {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .resultsWindowAction {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    table {
+        font-family:arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+    }
+   
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 4px 10px 4px 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .levelone {
+        margin: 1%;
+    }
+
+    .leveltwo {
+        margin: 2%;
+    }
+
+    .levelthree {
+        margin: 3%;
+    }
+
+    .levelsix {
+        margin-left: 6%;
+        margin-right: 6%
+    }
+
+    #detailedExpA {
+        color: blue;
+        cursor: pointer;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .elementSpacing {
+        margin-left: 20px;
+        margin-right: 2px;
+    }
+
+    </style>
+    
+    </head>
+
+
+
+    <body>
+
+        A discussion of the naming of binary ionic compounds assumes that you understand the following--<br><br>
+        
+            An ion is a particle with either a postive or negative electrical charge.<br>
+            A positive ion occurs when either a metal atom (a monoatomic ion) or a group of covalently bonded atoms (a polyatomic ion) contains more protons than electrons<br>
+            A negative ion occurs when either a non-metal atom (a monoatomic ion) or a group of covalently bonded atom (a polyatomic ion) contains more electrons than protons<br>
+
+            
+
+        As the word binary suggests (bi- meaning "two"), binary ionic compounds are ionic compounds that are made up of two parts or components.  As with any ionic compound, the compound is formed when a metalic element gives up electrons to become positively charged, forming a positive ion 
+
+
+
+
+    </body>
